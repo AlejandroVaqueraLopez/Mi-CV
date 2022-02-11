@@ -1,89 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="initial-scale=1">
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mi primer página</title>
-	<link rel="stylesheet" href="./styles/styles.css">
+	<title>Mi CV</title>
+	<link rel="stylesheet" href="./src/styles/styles.css"> 
 </head>
 <body>
+	<main>
+		<section class="main-section">
 
-	<!-- crea una página personal donde muestres algunos datos como
-Tu nombre, ocupación, hobbies, etc.
-Agrega una imagen tuya e inserta ligas que te dirijan a tus redes sociales.
-Además, encuentra y utiliza 5 etiquetas de HTML que sean distintas a las empleadas previamente. -->
-<header>
-	<div class="profile">
-		<img src="./image/profile.jpg" alt="profile">
-	</div>
-	<nav>
-		<h2 class="title">Mi portafolio</h2>
-	</nav>
-</header>
+			<aside class="aside-element">
 
-<main class="dataContainer">
+				<div class="aside-container">
+					<img class="image-profile" src="./src/images/profile.jpg" alt="profile.jpg">
+					<div class="contact-container">
+						<h3>Contacto</h3>
+						<ul>
 
-	<aside class="dataContainer__box">
+							<li class="list-item">
+								<img class="contact-icon" src="./src/images/mail-icon.png" alt="mail-icon.png">
+								<h6>alejandrovaqueralopez608@gmail.com</h6>
+							</li>
 
-		<div class="dataContainer__box-item">
-			<h3>Nombre:</h3>
-			<h5>Alejandro Vaquera López</h5>
-			<h3>Ocupación:</h3>
-			<h5>Estudiante</h5>
-			<h3>Hobbies:</h3>
-			<ul>
-				<li>Música</li>
-				<li>Películas</li>
-				<li>Tecnología</li>
-				<li>Skate</li>
-				<li>Videojuegos</li>
-			</ul>
+							<li class="list-item">
+								<a href="https://www.linkedin.com/in/alejandro-vaquera-lopez-2160481b2/">
+									<img class="contact-icon" src="./src/images/linkedin-icon.png" alt="linkedin-icon">
+									<h6>Alejandro Vaquera Lopez</h6>
+								</a>
+							</li>
 
-		</div>
+							<li class="list-item">
+								<a href="https://www.facebook.com/alejandro.vaqueralopez.5">
+									<img class="contact-icon" src="./src/images/facebook-icon.png" alt="facebook-icon">
+									<h6>Alejandro Vaquera Lopez</h6>
+								</a>
+							</li>
 
-		<div class="dataContainer__box-item">
-			<div class="social-media">
-				</h2>Mis redes</h2>
-				<div class="logos">
-					<a href="https://www.facebook.com/ale.monster.jam/"target="_blank">
-						<img class="socialMedia" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="myFacebook">
-					</a>
-					<a href="https://www.instagram.com/soyvaquerale/" target="_blank">
-						<img class="socialMedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/480px-Instagram-Icon.png" alt="myInstagram">
-					</a>
+							<li class="list-item">
+								<a href="https://github.com/AlejandroVaqueraLopez">
+									<img class="contact-icon" src="./src/images/github-icon.png" alt="github-icon">
+									<h6>AlejandroVaqueraLopez</h6>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="skills-container">
+						<h3>Habilidades</h3>
+						<ul>
+
+							<li>
+								<div class="skill-bar">
+									<div class="skill-bar__html"></div>
+									<div class="skill-bar__down"></div>
+								</div>
+								<h5>HTML</h5>
+							</li>
+
+							<li>
+								<div class="skill-bar">
+									<div class="skill-bar__python"></div>
+									<div class="skill-bar__down"></div>
+								</div>
+								<h5>Python</h5>
+							</li>
+
+							<li>
+								<div class="skill-bar">
+									<div class="skill-bar__css"></div>
+									<div class="skill-bar__down"></div>
+								</div>
+								<h5>CSS</h5>
+							</li>
+
+							<li>
+								<div class="skill-bar">
+									<div class="skill-bar__javascript"></div>
+									<div class="skill-bar__down"></div>
+								</div>
+								<h5>Javascript</h5>
+							</li>
+
+							<li>
+								<div class="skill-bar">
+									<div class="skill-bar__english"></div>
+									<div class="skill-bar__down"></div>
+								</div>
+								<h5>Ingles</h5>
+							</li>
+
+							<li>
+								<div class="skill-bar">
+									<div class="skill-bar__bootstrap"></div>
+									<div class="skill-bar__down"></div>
+								</div>
+								<h5>Bootstrap</h5>
+							</li>
+
+							<li>
+								<div class="skill-bar">
+									<div class="skill-bar__sass"></div>
+									<div class="skill-bar__down"></div>
+								</div>
+								<h5>Sass</h5>
+							</li>
+
+						</ul>
+
+					</div>
+
 				</div>
-			</div>
-		</div>
-	</aside>
-	<section>
-		<h2>Mis estudios</h2>
-		<p>
-			Actualmente estoy estudiando en "Professional Coding" en DEVF, para tener un perfil
-			orientado al desarrollo web en <strong>Front-End</strong>
-		</p>
-		<h3>
-			Los módulos que cursaré son los siguientes:
-		</h3>
-		<div class="container">
-			<div class="mini-box">
-				<h4>Intro a la web</h4>
-			</div>
-			<div class="mini-box">
-				<h4>JS</h4>
-			</div>
-			<div class="mini-box">
-				<h4>Computer science</h4>
-			</div>
-			<div class="mini-box">
-				<h4>JS avanzado</h4>
-			</div>
-			<div class="mini-box">
-				<h4>Frontend</h4>
-			</div>
-		</div>
 
-	</section>
-</main>
+			</aside>
+
+			<section class="main-section__container">
+
+				<div class="main-section__container-content">
+
+					<h1>Mi CV</h1>
+					<h2>Alejandro Vaquera Lopez</h2>
+					<hr>
+
+					<div class="personal-data">
+						<h3>Programador</h3>
+						<p>Edad: 18 a�os.</p>
+						<p>Nacionalidad: Mexicana.</p>
+						<p>Sexo: Masculina.</p>
+					</div>
+
+					<div class="personal-profile">
+						<h3>Perfil personal</h3>
+						<p>
+							Soy un programador comunicativo. Cuento con 3 a�os de 
+							experiencia desarrollando proyectos en distintos lenguajes de 
+							programaci�n, tales
+							como Javascript y Python, en frameworks derivados como
+							tkinter (python) y tecnolog�as web CSS/HTML.
+						</p>
+					</div>
+
+					<div class="experience">
+						<h3>Experiencia laboral</h3>
+						<div class="experience-item">
+
+						</div>
+					</div>
+
+					<div class="scholarship">
+						<h3>Historial educativo</h3>
+						<div class="scholarship-item"></div>
+						<div class="scholarship-item"></div>
+					</div>
+
+					</div>
+
+			</section>
+
+		</section>
+	</main>
+	
 </body>
 </html>
