@@ -55,8 +55,6 @@ main{
 	box-sizing:border-box;
 	color:#fff;
 }
-.contact-container ul{
-}
 .contact-container ul li{
 	margin:12px 0px;
 }
@@ -185,7 +183,6 @@ main{
 .main-section__container-content > h2{
 	font-size:30px;
 	color:#6892DC;
-
 } 
 hr{
 	width:60px;
@@ -247,6 +244,3 @@ hr{
 	width:100%;
 	box-sizing:border-box;
 }
-
-
-
